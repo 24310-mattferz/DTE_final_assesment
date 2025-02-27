@@ -1,70 +1,13 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #ffcccc, #ff9999);
-    color: #333;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-header {
-    background: #e74c3c;
-    color: white;
-    padding: 1.5rem;
-    text-align: center;
-}
-
-h1 {
-    font-size: 2rem;
-    margin: 0;
-}
-
-nav {
-    background: #c0392b;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 10px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.3);
-    padding: 10px;
-}
-
-section {
-    padding: 30px;
-    margin: 20px;
-    background: #f8d7da;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-footer {
-    background: #e74c3c;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: 1rem;
-}
+body { 
+     background: #f9f9f9;
+     min-height: 100vh;
+     overflow-x: hidden;
+    }
