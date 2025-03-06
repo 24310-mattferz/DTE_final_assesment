@@ -68,7 +68,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap; 
-    z-index: 5; /* Lower than leaf.png so it appears behind */
+    z-index: 5; 
 }
 
 .parallax img {
@@ -82,7 +82,7 @@ header {
 
 #leaf {
     position: absolute;
-    z-index: 20;
+    z-index: 10;
 }
 
 @media (max-width: 768px) {
@@ -100,6 +100,26 @@ header {
     #text {
         font-size: 2em;
     }
+}
+
+.sec{
+    position: relative;
+   background-color: #003329;
+    padding: 100px
+
+}
+
+.sec h2 {
+    font-size: 3em;
+    color: #f5f1f1;
+    margin-bottom: 10px;
+
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
 }
 
 
