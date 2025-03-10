@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d260d; /
+}
+
+.container { 
+    padding: 2%;
+    margin: 10% auto;
+    width: 30%; 
+    background-color: #1a3d1a; 
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 255, 0, 0.3); 
+    border: 2px solid #00ff00; 
+    transition: 0.3s;
+}
+.container:hover {
+    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.8);
+}
+
+.container p:first-child {
+    font-size: 17px;
+    font-weight: 600;
+    color: #b6ffb6; 
+}
+.time {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    background-color: #004d00; 
+    border-radius: 10px;
+}
+
+.time span {
+    flex: 1; 
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #b6ffb6;
+    background-color: #004d00;
+    border-radius: 10px;
+    border: 2px solid #00ff00;
+    transition: 0.3s;
+}
+.time span.active {
+    background-color: #00ff00;
+    color: #003300;
+    border-radius: 10px;
+    border: 2px solid #00ff00;
+}
+
+p:nth-of-type(2) {
+    margin-top: 5%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #b6ffb6;
+}
+
+.value {
+    width: 100%;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.money { 
+    border: 2px solid #00ff00;
+    border-radius: 7px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #004d00;
+    color: #b6ffb6;
+    transition: 0.3s;
+}
+
+.money:hover {
+    background-color: #00ff00;
+    color: #003300;
+}
+
+.confirm, .input {
+    margin-top: 5%;
+}
+
+input[type="text"], input[type="email"] { 
+    margin-top: 2%;
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #00ff00;
+    background-color: #003300;
+    color: #b6ffb6;
+}
+
+p:nth-of-type(3) {
+    margin-top: 10px;
+    color: #00ff00;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    margin-top: 5%;
+    font-size: 15px;
+    font-weight: 600;
+    color: #003300;
+    background-color: #00ff00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover { 
+    background-color: #003300;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+}
+
+p:nth-of-type(4) {
+    margin-top: 10%;
+    color: #b6ffb6;
+}
+
+.blue { 
+    color: #00ff00;
+    text-decoration: underline;
+    cursor: pointer;
+}
