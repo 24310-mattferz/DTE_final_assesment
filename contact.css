@@ -62,8 +62,75 @@
     position:relative;
     min-width: 60px;
     height: 60px;
-    background: repeating-conic-gradient(from 30deg, #01dbc2 0%, #01dbc2 10%, transparent 10%, transparent 50%);
+    background: repeating-conic-gradient(from 27.5deg, #01dbc2 0%, #01dbc2 10%, transparent 10%, transparent 50%);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.container .contactInfo .box .icon::before 
+{ 
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from 117deg, #01dbc2 0%, #01dbc2 10%, transparent 10%, transparent 50%);
+}
+
+.container .contactInfo .box .icon::after 
+{ 
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #222;
+}
+
+.container .contactInfo .box .icon b
+{
+    position: absolute;
+    inset: 8px;
+    background: #01dbc2;
+    z-index: 2;
+
+}
+.container .contactInfo .box .icon i
+{
+    position: relative;
+    z-index: 1000;
+    color: #333;
+    font-size: 1.25em;
+}
+.container .contactInfo .box .text
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 1.1em;
+    color:#fff;
+    font-family:300;
+}
+
+.container .contactInfo .box .text h3
+{
+    font-weight: 500;
+    color: #01dbc2
+}
+
+.container .contactInfo .txt
+{
+    color: #fff;
+    margin-top: 50px;
+    border-left: 50px solid #01dbc2;
+    padding-left: 10px;
+    line-height: 1em;
+}
+.container .contactInfo .sci .li
+{
+    list-style: none;
+}
+
+.container .contactInfo .sci li a
+{
+    color:#fff;
+    font: size 1.5em;
+    transition: 0.25s;
 }
