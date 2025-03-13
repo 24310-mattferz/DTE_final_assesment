@@ -50,10 +50,17 @@
     margin-top: 30px;
 }
 
+.container .contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
 .container .contactInfo .box
 {
     position: relative;
-    padding: 20px;
+    padding: 20px 0;
     display:flex;
     cursor: pointer;
 }
@@ -123,6 +130,13 @@
     padding-left: 10px;
     line-height: 1em;
 }
+.container .contactInfo .sci
+{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
 .container .contactInfo .sci .li
 {
     list-style: none;
@@ -133,4 +147,58 @@
     color:#fff;
     font: size 1.5em;
     transition: 0.25s;
+}
+.container .contactInfo .sci li a:hover
+{
+    color: #01dbc2;
+    filter: drop-shadow(0 0 5x #01dbc0
+    )
+}
+
+.container .contactForm
+{
+    position: relative;
+    width: 40%;
+    background: repeating-conic-gradient(from var(--a),#01dbc2 0%, #01dbc2 10%, transparent 10%,transparent 50%);
+    animation: animate 6s linear infinite;
+    padding: 60px;
+}
+.container .contactForm::before
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from var(--a),#01dbc2 0%, #01dbc2 10%, transparent 10%,transparent 50%);
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+.container .contactForm::after
+{
+    content:'';
+    position: absolute;
+    inset: 2px;
+    border: 20px solid #222;
+    background: #333
+}
+@property --a 
+{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+@keyframes animate
+{
+    0%
+    {
+        --a: 0deg;
+    }
+    100%
+    {
+        --a: 360deg;
+    }
+}
+
+.container .contactForm form
+{
+    position: relative;
 }
