@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0d260d; /
+    background-color: #0d260d;
 }
 
 .container { 
@@ -28,6 +28,7 @@ body {
     font-weight: 600;
     color: #b6ffb6; 
 }
+
 .time {
     margin-top: 3%;
     display: flex;
@@ -137,4 +138,86 @@ p:nth-of-type(4) {
     color: #00ff00;
     text-decoration: underline;
     cursor: pointer;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 70%;
+        padding: 4%;
+        margin: 15% auto;
+    }
+
+    .time {
+        padding: 8%;
+        flex-direction: column;
+    }
+
+    .time span {
+        margin-bottom: 10px;
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .value {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+
+    .money {
+        padding: 8px;
+    }
+
+    input[type="text"], input[type="email"] {
+        font-size: 14px;
+        padding-left: 8px;
+        height: 25px;
+    }
+
+    button {
+        font-size: 14px;
+        height: 35px;
+    }
+
+    p:nth-of-type(3), p:nth-of-type(4) {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 5%;
+        margin: 20% auto;
+    }
+
+    .time span {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .value {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .money {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    input[type="text"], input[type="email"] {
+        font-size: 13px;
+        padding-left: 6px;
+        height: 22px;
+    }
+
+    button {
+        font-size: 13px;
+        height: 30px;
+    }
+
+    p:nth-of-type(3), p:nth-of-type(4) {
+        font-size: 13px;
+    }
 }
