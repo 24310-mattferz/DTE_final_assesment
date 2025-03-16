@@ -20,6 +20,10 @@ body{
   border-radius: 30px;
 }
 
+h1 {
+  margin-bottom: 30px; 
+}
+
 header{
   position:relative;
   top: 0;
@@ -129,3 +133,4 @@ header{
   box-shadow: 0 0 10px #fff;
   color:#fff;
 }
+

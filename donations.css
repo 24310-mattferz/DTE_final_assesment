@@ -140,7 +140,6 @@ p:nth-of-type(4) {
     cursor: pointer;
 }
 
-/* Mobile responsiveness */
 @media (max-width: 768px) {
     .container {
         width: 70%;
