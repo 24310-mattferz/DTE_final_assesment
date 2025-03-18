@@ -34,7 +34,6 @@ header{
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-
 }
 
 .logo {
@@ -76,13 +75,12 @@ header{
   padding-top: 50px; 
 }
 
-
 .home-detail h1 {
   font-size: 54px;
   line-height: 1;
 }
 
-.home-detailh2{
+.home-detail h2 {
   font-size: 32px;
 }
 
@@ -131,6 +129,82 @@ header{
 .home-detail .social-icons a:hover {
   background: #fff;
   box-shadow: 0 0 10px #fff;
-  color:#fff;
+  color: #fff;
 }
 
+/* Mobile-first responsiveness */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 30px 5%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .navbar a {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+
+  .home {
+    flex-direction: column;
+    padding: 30px 5%;
+    gap: 30px;
+  }
+
+  .home-detail {
+    flex: 1;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .home-detail h1 {
+    font-size: 42px;
+  }
+
+  .home-detail p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .home-detail .download-social {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .social-icons a {
+    font-size: 18px;
+    padding: 6px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-detail h1 {
+    font-size: 36px;
+  }
+
+  .home-detail p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .social-icons a {
+    font-size: 16px;
+    padding: 5px;
+  }
+}

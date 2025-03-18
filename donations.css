@@ -6,27 +6,29 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0d260d;
+    background-color: #0D260D;
+    color: #F5F5F5;
 }
 
 .container { 
     padding: 2%;
     margin: 10% auto;
     width: 30%; 
-    background-color: #1a3d1a; 
+    background-color: #1E392A; 
     border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 255, 0, 0.3); 
-    border: 2px solid #00ff00; 
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2); 
+    border: 2px solid #4C704C; 
     transition: 0.3s;
 }
+
 .container:hover {
-    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.8);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
 }
 
 .container p:first-child {
     font-size: 17px;
     font-weight: 600;
-    color: #b6ffb6; 
+    color: #D9D9D9;
 }
 
 .time {
@@ -34,7 +36,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 4%;
-    background-color: #004d00; 
+    background-color: #2A4F3A; 
     border-radius: 10px;
 }
 
@@ -43,24 +45,24 @@ body {
     padding: 10px;
     text-align: center;
     cursor: pointer;
-    color: #b6ffb6;
-    background-color: #004d00;
+    color: #F5F5F5;
+    background-color: #2A4F3A;
     border-radius: 10px;
-    border: 2px solid #00ff00;
+    border: 2px solid #4C704C;
     transition: 0.3s;
 }
+
 .time span.active {
-    background-color: #00ff00;
-    color: #003300;
-    border-radius: 10px;
-    border: 2px solid #00ff00;
+    background-color: #4C704C;
+    color: #F5F5F5;
+    border: 2px solid #D9D9D9;
 }
 
 p:nth-of-type(2) {
     margin-top: 5%;
     font-size: 16px;
     font-weight: 600;
-    color: #b6ffb6;
+    color: #D9D9D9;
 }
 
 .value {
@@ -72,20 +74,20 @@ p:nth-of-type(2) {
 }
 
 .money { 
-    border: 2px solid #00ff00;
+    border: 2px solid #4C704C;
     border-radius: 7px;
     font-weight: 600;
     padding: 10px;
     text-align: center;
     cursor: pointer;
-    background-color: #004d00;
-    color: #b6ffb6;
+    background-color: #2A4F3A;
+    color: #F5F5F5;
     transition: 0.3s;
 }
 
 .money:hover {
-    background-color: #00ff00;
-    color: #003300;
+    background-color: #4C704C;
+    color: #0D260D;
 }
 
 .confirm, .input {
@@ -99,14 +101,14 @@ input[type="text"], input[type="email"] {
     padding-left: 10px;
     font-size: 15px;
     border-radius: 5px;
-    border: 1px solid #00ff00;
-    background-color: #003300;
-    color: #b6ffb6;
+    border: 1px solid #4C704C;
+    background-color: #2A4F3A;
+    color: #F5F5F5;
 }
 
 p:nth-of-type(3) {
     margin-top: 10px;
-    color: #00ff00;
+    color: #4C704C;
 }
 
 button {
@@ -115,8 +117,8 @@ button {
     margin-top: 5%;
     font-size: 15px;
     font-weight: 600;
-    color: #003300;
-    background-color: #00ff00;
+    color: #0D260D;
+    background-color: #4C704C;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -124,18 +126,18 @@ button {
 }
 
 button:hover { 
-    background-color: #003300;
-    color: #00ff00;
-    border: 1px solid #00ff00;
+    background-color: #D9D9D9;
+    color: #0D260D;
+    border: 1px solid #4C704C;
 }
 
 p:nth-of-type(4) {
     margin-top: 10%;
-    color: #b6ffb6;
+    color: #D9D9D9;
 }
 
 .blue { 
-    color: #00ff00;
+    color: #4C704C;
     text-decoration: underline;
     cursor: pointer;
 }
