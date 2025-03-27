@@ -38,14 +38,15 @@ header{
 
 .logo {
   font-size: 25px;
-  color: #fff;
+  color: #35654D;
   text-decoration: none;
   font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 
 .navbar a {
   font-size: 18px;
-  color: #fff;
+  color:#35654D;;
   text-decoration: none;
   font-weight: 500;
   margin-left: 30px;
@@ -55,7 +56,7 @@ header{
 
 .navbar a:hover, 
 .navbar a.active {
-  border-color: #fff;
+  border-color:#A8C686;
 }
 
 .home {
