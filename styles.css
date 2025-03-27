@@ -67,7 +67,7 @@ header{
   height: 100%;
   gap: 50px;
   padding: 50px 5% 0;
-  color: #fff;
+  color: #ffffff;
 }
 
 .home-detail {
@@ -92,6 +92,7 @@ header{
 .home-detail .download-social {
   display: flex;
   align-items: center;
+  margin-top: 120px;
 }
 
 .btn {

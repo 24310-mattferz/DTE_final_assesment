@@ -9,8 +9,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #111;
-}
+    height: 100vh;
+    background: url("forest-green-background.jpg");
+    padding: 50px 5%;
+  }
+
 .container {
     position: relative;
     display: flex;
@@ -41,7 +44,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(315deg, #00aaff, #1e90ff);
+    background: linear-gradient(315deg, #35654D, #35654D);
     z-index: 0;
 }
 .container .box::after {
@@ -51,17 +54,17 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(315deg, #00aaff, #1e90ff);
+    background: linear-gradient(315deg, #35654D,#35654D);
     filter: blur(30px);
     z-index: 0;
 }
 .container .box:nth-child(2)::before,
 .container .box:nth-child(2)::after {
-    background: linear-gradient(315deg, #00e5e5, #2dff70);
+    background: linear-gradient(315deg,#35654D, #35654D);
 }
 .container .box:nth-child(3)::before,
 .container .box:nth-child(3)::after {
-    background: linear-gradient(315deg, #ff7b00, #ff69b4);
+    background: linear-gradient(315deg, #35654D,#35654D);
 }
 .container .box span {
     position: absolute;
