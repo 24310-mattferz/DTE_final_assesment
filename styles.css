@@ -1,3 +1,12 @@
+/*======================================================
+  Stylesheet for the Home page (index.html)
+  Author: Matthew Fernandez
+  File: Styles.css
+  Created: Febuary 28, 2025
+  Updated:  March 27 2025
+  ======================================================*/
+
+/* Imported Google Font "Poppins" for a modern and clean look*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 *{
@@ -7,12 +16,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+/*Background for the full page*/
 body{
   height: 100vh;
   background: url("high-angle-shot-beautiful-forest-with-lot-green-trees-enveloped-fog-new-zealand.jpg") no-repeat center / cover;
   padding: 50px 5%;
 }
 
+/*Semi-transaprent white container for a glassmorphic effect*/
 .container{
   position: relative;
   height: 100%;
@@ -41,7 +52,7 @@ header{
   color: #35654D;
   text-decoration: none;
   font-weight: 600;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);/*Text shadow to make it more readable*/
 }
 
 .navbar a {
@@ -51,7 +62,7 @@ header{
   font-weight: 500;
   margin-left: 30px;
   border-bottom: 2px solid transparent;
-  transition: .5s;
+  transition: .5s; /* Smooth transition for hover effects*/
 }
 
 .navbar a:hover, 
@@ -95,6 +106,7 @@ header{
   margin-top: 120px;
 }
 
+ /*Glow effect on buttons using box-shadow*/
 .btn {
   display: inline-block;
   padding: 10px 30px;
@@ -107,6 +119,7 @@ header{
   font-weight: 500;
 }
 
+/*Button changes to a transparent style on hover*/
 .btn:hover {
   background: transparent;
   box-shadow: none;
@@ -117,6 +130,7 @@ header{
   margin-left: 20px;
 }
 
+ /*Circular social media icons*/
 .home-detail .social-icons a {
   display: inline-flex;
   padding: 8px;
@@ -128,84 +142,100 @@ header{
   margin: 0 8px;
 }
 
+/*Glow effect on hover*/
 .home-detail .social-icons a:hover {
   background: #fff;
   box-shadow: 0 0 10px #fff;
   color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 768px) { /*Responsive adjustments for tablets and smaller screens*/
   body {
-    padding: 30px 5%;
-  }
+    padding: 30px 5%; /* Reducing padding for better spacing on smaller screens */
+  } 
 
   header {
     flex-direction: column;
     align-items: center;
+    /* Stacking header elements vertically */
   }
 
   .logo {
     font-size: 22px;
+   /* Slightly smaller logo for a better fit */
   }
 
   .navbar a {
     margin-left: 20px;
     font-size: 16px;
+    /* Reducing font size and spacing for navigation links */
   }
 
   .home {
     flex-direction: column;
     padding: 30px 5%;
     gap: 30px;
+    /* Switching to a vertical layout for better readability */
   }
 
   .home-detail {
     flex: 1;
     padding-top: 30px;
     text-align: center;
+    /*Centering text */
   }
 
   .home-detail h1 {
     font-size: 42px;
+     /* Scaling down the main heading */
   }
 
   .home-detail p {
     font-size: 16px;
     margin: 10px 0;
+    /* Adjusting paragraph size for better readability */
   }
 
   .home-detail .download-social {
     flex-direction: column;
     gap: 20px;
+    /* Stacking download and social icons vertically */
   }
 
   .btn {
     padding: 8px 20px;
     font-size: 14px;
+    /* Adjusting button size for touch-friendly interaction */
   }
 
   .social-icons a {
     font-size: 18px;
     padding: 6px;
+    /* Resizing social icons for a balanced look */
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) { /* Further adjustments for mobile screens */
   .home-detail h1 {
     font-size: 36px;
-  }
+    /* Further reducing heading size for small screens */
+  } 
 
   .home-detail p {
     font-size: 14px;
+    /* Smaller text for compact display */
   }
 
   .btn {
     padding: 8px 15px;
     font-size: 12px;
+    /* More compact buttons for mobile users */
   }
 
   .social-icons a {
     font-size: 16px;
     padding: 5px;
+    /* Reducing icon size to match the smaller layout */
   }
 }

@@ -1,16 +1,28 @@
+<!--==============================================
+    Donation Page for Wildlife Conservatory (Ecological Consequenses of Biodiversity)
+    File: Donation.html
+    Author: Matthew Fernandez
+    Created: March 10, 2025
+    Last Updated: March 28, 2025
+    ============================================== -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="donations.css">
-    <title>𝕯𝖔𝖓𝖆𝖙𝖎𝖔𝖓𝖘✩</title>	
+    <link rel="stylesheet" href="donations.css"><!--Link to the css file-->
+    <title>𝕯𝖔𝖓𝖆𝖙𝖎𝖔𝖓𝖘✩</title>	<!--Title of the page which appears in the browser tab i have also used a custom font and a custom emoji-->
 </head>
 <body>
+    <!--Header Section-->
     <header>
-        <a href="#" class="logo"> 𝐖𝐢𝐥𝐝𝐥𝐢𝐟𝐞 𝐂𝐨𝐧𝐬𝐞𝐫𝐯𝐚𝐭𝐨𝐫𝐲 </a>
+        <!--Header section for the wildlife conservatory with the company's name along with a navbar -->
+        <a href="about.html" class="logo"> 𝐖𝐢𝐥𝐝𝐥𝐢𝐟𝐞 𝐂𝐨𝐧𝐬𝐞𝐫𝐯𝐚𝐭𝐨𝐫𝐲 </a>
     
+        <!--Navigation Bar that links to other pages-->
         <nav class="navbar">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
@@ -19,16 +31,19 @@
         </nav>
       </header>
     
-
+<!--Main content section-->
     <div class="container">
         <h2>Support Our Cause</h2>
 
+        <!--Donation Frequency  Selection-->
         <p>Select frequency</p>
         <div class="time">
+            <!--Default selection-->
             <span class="active">Monthly</span>
             <span>One-time</span>
         </div>
-
+        
+        <!--Donation Amount Selection-->
         <p>Select amount</p>
         <div class="value">
             <span class="money">$12</span>
@@ -37,12 +52,14 @@
             <span class="money">$50</span>
             <span class="money">$60</span>
         </div>
-
+       
+        <!--Checkbox for optional transaction fee contributtion-->
         <div class="confirm">
             <input type="checkbox" id="transaction-fee">
             <label for="transaction-fee">Yes, I'll generously add $0.30 each month to cover the transaction fee.</label>
         </div>
 
+        <!--Donation Form-->
         <form action="process_donation.php" method="POST">
             <div class="input">
                 <label for="name">Name</label>
@@ -51,12 +68,15 @@
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
             </div>
+            <!--Submit Button-->
             <button type="submit" class="donate-btn">Donate Now</button>
         </form>
 
+        <!--Terms and Privacy policy-->
         <p>By donating, you agree to our <span class="blue">Terms of Service</span> and <span class="blue">Privacy Policy</span>.</p>
     </div>
-
+     
+<!--Javascript for donation frequency selection-->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const timeOptions = document.querySelectorAll(".time span");
