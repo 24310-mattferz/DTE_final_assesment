@@ -1,5 +1,12 @@
+/*======================================================
+  Stylesheet for the Donation page (donation.css)
+  Author: Matthew Fernandez
+  File: About.css
+  Created: March 10, 2025
+  Updated:  March 28, 2025
+  ======================================================*/
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;/* Ensures padding & border are included in element width and height */
     margin: 0;
     padding: 0;
 }

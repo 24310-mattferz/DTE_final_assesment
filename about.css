@@ -1,9 +1,20 @@
+/*======================================================
+  Stylesheet for the About us page (about.css)
+  Author: Matthew Fernandez
+  File: About.css
+  Created: March 21, 2025
+  Updated:  March 29, 2025
+  ======================================================*/
+
+/*Global styles*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: consolas;
 }
+
+/*Body Styles*/
 body {
     display: flex;
     justify-content: center;
@@ -14,7 +25,7 @@ body {
     padding: 50px 5%;
   }
   
-
+/*Container Layout*/
 .container {
     position: relative;
     display: flex;
@@ -23,6 +34,8 @@ body {
     padding: 40px 0;
     flex-wrap: wrap;
 }
+
+/*Header styles*/
 header{
     position:relative;
     top: -40px;
@@ -35,6 +48,7 @@ header{
     z-index: 100;
   }
   
+  /*Wildlife conservatory logo*/
   .logo {
     font-size: 25px;
     color: #ffffff;
@@ -42,7 +56,8 @@ header{
     font-weight: 600;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
   }
-  
+
+  /*Navigation bar styles*/
   .navbar a {
     font-size: 18px;
     color:#fbfbfb;;
@@ -58,21 +73,24 @@ header{
     border-color:#ffffff;
   }
   
+/*Box styles (Card Effects)*/
 .container .box {
     position: relative;
     width: 320px;
     height: 400px;
     color: #fff;
-    background: #111;
+    background: #111; /*Dark background for contrast*/
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px 30px;
-    transition: 0.5s;
+    transition: 0.5s; /*Smooth hover effects*/
 }
 .container .box:hover {
-    transform: translateY(-20px);
+    transform: translateY(-20px); /*Floating effect when hovering*/
 }
+
+/*Box Background Effects (Gradient and Blur*/
 .container .box::before {
     content: '';
     position: absolute;
@@ -91,9 +109,10 @@ header{
     width: 100%;
     height: 100%;
     background: linear-gradient(315deg, #35654D,#35654D);
-    filter: blur(30px);
+    filter: blur(30px); /*Blurred glowing effect*/
     z-index: 0;
 }
+/*Ensuring diffrent boxes have almost the same gradient*/
 .container .box:nth-child(2)::before,
 .container .box:nth-child(2)::after {
     background: linear-gradient(315deg,#35654D, #35654D);
@@ -102,13 +121,14 @@ header{
 .container .box:nth-child(3)::after {
     background: linear-gradient(315deg, #35654D,#35654D);
 }
+/*Overlayed for improved readability*/
 .container .box span {
     position: absolute;
     top: 6px;
     left: 6px;
     right: 6px;
     bottom: 6px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);/*Dark semi transparent background for improved readability*/
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -117,6 +137,7 @@ header{
     padding: 20px;
 }
 
+/*Overlay effect on half of the box*/
 .container .box span::before
 {
     content:'';
@@ -126,8 +147,10 @@ header{
     width: 50%;
     height: 100%;
     background: rgba(255,255,255,0.1);
-    pointer-events: none;
+    pointer-events: none; 
 }
+
+/*Box content (Text and Button styles)*/
 .container .box .content
 {
     position: relative;
@@ -147,6 +170,7 @@ header{
     margin-bottom: 10px;
     line-height: 1.4em;
 }
+
 .container .box .content a
 {
    display: inline-block;
