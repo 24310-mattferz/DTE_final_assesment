@@ -1,3 +1,12 @@
+/*======================================================
+  Stylesheet for the contact css (contact.css)
+  Author: Matthew Fernandez
+  File: Contact.css
+  Created: March 10, 2025
+  Updated:  March 28, 2025
+  ======================================================*/
+
+/* Imported Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * { 
@@ -6,18 +15,20 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+/* Header Styling */
 header{
     position:relative;
-    top: -50px;
-    left: 10;
+    top: -50px;/* Moves header up slightly */
     width: 100%;
     padding: 30px 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 100;/* Ensures header stays above other elements */
   }
   
+  /*Logo Styling (Wildlife conservatory) */
   .logo {
     font-size: 25px;
     color: #ffffff;
@@ -26,21 +37,24 @@ header{
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
   }
   
+  /* Navigation Bar */
   .navbar a {
     font-size: 18px;
     color:#fbfbfb;;
     text-decoration: none;
     font-weight: 500;
     margin-left: 30px;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid transparent;/* Default transparent border */
     transition: .5s;
   }
   
+  /* Navbar Hover*/
   .navbar a:hover, 
   .navbar a.active {
-    border-color:#ffffff;
+    border-color:#ffffff;/* Underline effect on hover */
   }
 
+  /* Contact Section */
 .contact {
     position: relative;
     min-height: 100vh;
@@ -49,10 +63,11 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #0D260D;
+    background: #0D260D; /* Dark green background */
     box-sizing:border-box;
 }
 
+/* Contact Content Styling */
 .contact .content {
     max-width: 800px;
     text-align: center;
@@ -70,6 +85,7 @@ header{
     font-weight: 300;
 }
 
+/* Container Layout */
 .container {
     width: 100%;
     display: flex;
@@ -79,12 +95,14 @@ header{
     margin-top: 30px;
 }
 
+/* Contact Info Section */
 .container .contactInfo {
     width: 50%;
     display: flex;
     flex-direction: column;
 }
 
+/* Contact Information Boxes */
 .container .contactInfo .box {
     position: relative;
     padding: 20px 0;
@@ -92,6 +110,7 @@ header{
     cursor: pointer;
 }
 
+/* Icon Background Styling */
 .container .contactInfo .box .icon {
     position: relative;
     min-width: 60px;
@@ -102,6 +121,7 @@ header{
     align-items: center;
 }
 
+/*Gradients for the animation */
 .container .contactInfo .box .icon::before { 
     content: '';
     position: absolute;
@@ -116,6 +136,7 @@ header{
     background: #2A4F3A;
 }
 
+/* Icon Styling */
 .container .contactInfo .box .icon b {
     position: absolute;
     inset: 8px;
@@ -130,6 +151,7 @@ header{
     font-size: 1.25em;
 }
 
+/* Contact Info Text */
 .container .contactInfo .box .text {
     position: relative;
     display: flex;
@@ -145,6 +167,7 @@ header{
     color: #4C704C;
 }
 
+/* Contact Info Text Box */
 .container .contactInfo .txt {
     color: #F5F5F5;
     margin-top: 50px;
@@ -153,6 +176,7 @@ header{
     line-height: 1.2em;
 }
 
+/* Responsive Design for Tablets */
 @media (max-width: 768px) 
 {
  .contact {
@@ -181,7 +205,7 @@ flex-direction: column;
   background: #0D260D;
     }
     
-    
+/* Social Media Icons */
 .container .contactInfo .sci {
   position: relative;
   display: flex;
@@ -199,11 +223,13 @@ flex-direction: column;
   transition: 0.25s;
     }
     
+ /* Social Media Hover Effect */
 .container .contactInfo .sci li a:hover {
   color: #4C704C;
   filter: drop-shadow(0 0 5px #4C704C);
     }
     
+/* Contact Form */
 .container .contactForm {
   position: relative;
   width: 40%;
@@ -212,6 +238,7 @@ flex-direction: column;
   padding: 60px;
     }
     
+/* Contact Form Animations */
 .container .contactForm::before {
   content: '';
   position: absolute;
@@ -257,6 +284,7 @@ flex-direction: column;
         margin-top: 20px;
     }
     
+     /* Contact Form Input Fields */
     .container .contactForm form .inputBox input,
     .container .contactForm form .inputBox textarea {
         width: 100% !important;
@@ -282,6 +310,7 @@ flex-direction: column;
         transition: 0.5s;
  }
     
+ /* Input Field Focus Effect */
     .container .contactForm form .inputBox input:focus ~ span,
     .container .contactForm form .inputBox textarea:focus ~ span {
         color: #4C704C;
@@ -289,6 +318,7 @@ flex-direction: column;
         transform: translateY(-24px);
  }
     
+ /* Submit Button */
     .container .contactForm form .inputBox input[type="submit"] {
         width: 100%;
         background: #4C704C;
@@ -343,6 +373,7 @@ flex-direction: column;
         }
     }
     
+    /* Mobile Responsive Design */
     @media (max-width: 480px) {
         .contact {
             padding: 20px;
